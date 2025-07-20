@@ -23,6 +23,8 @@ a{
 
 .menu-btn {
     cursor: pointer;
+    border: none;
+    background-color: transparent;
 }
 
 .header-box {
@@ -133,10 +135,17 @@ a{
     position: absolute;
     top: 24px;
     right: 24px;
+
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 24px;
+    height: 24px;
+    stroke-width: 1px;
+    background-color:transparent;
+    stroke: #2E2F42;
+    cursor: pointer;
 }
 
 
