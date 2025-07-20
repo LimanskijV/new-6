@@ -4,25 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./css/styles.css" />
+
 </head>
 <body>
-    <header>
-        <div class="container">
-        <a href="">WEB<span>STUDIO</span></a>
+    <header class="header-all">
+        <div class="container header-box">
+        <a href="" class="web-name">WEB<span class="studio-name">STUDIO</span></a>
+        <button type="button" class ="menu-btn" data-menu-open>
         <svg width="24px" height="24px">
             <use href="./images/icons.svg#icon-menu"></use>
         </svg>
+        </button>
+        </div>
+        <div class="mobile-menu is-open" data-menu>
+            <div class=" container mobile-menu-container">
+                <button class="mobile-menu-close" data-menu-close>
+                    <svg width="24px" height="24px">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <nav class="mobile-menu-nav">
+                    <ul class="mobile-menu-nav-list">
+                        <li><a href="" class="mobile-menu-nav-list-item">Studio</a></li>
+                        <li><a href="" class="mobile-menu-nav-list-item">Portfolio</a></li>
+                        <li><a href="" class="mobile-menu-nav-list-item">Contacts</a></li>
+                    </ul>
+                </nav>
+                <address>
+                    <ul class="mobile-menu-add-list">
+                        <li><a href="tel:1100011111111" class="mobile-menu-add-list-item">+11 (000) 111-11-11</a></li>
+                        <li><a href="email:info@devstudio.com" class="mobile-menu-add-list-item">info@devstudio.com</a></li>
+                    </ul>
+                </address> 
+                    <ul class="social">
+                        <li>
+                            <a href="" class="social-item">
+                                <svg width="16px" height="16px">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="social-item">
+                                <svg width="16px" height="16px">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="social-item">
+                                <svg width="16px" height="16px">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="social-item">
+                                <svg width="16px" height="16px">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>                
+            </div>
         </div>
     </header>
     <main>
         <section class="hero-banner">
             <div class="container">
-            <h1>Effective Solutions for Your Business</h1>
-            <button type="button">Order Service</button>
+            <h1 class="hero-title">Effective Solutions for Your Business</h1>
+            <button type="button" class="hero-button">Order Service</button>
             </div>
         </section>
         <section class="benefits">
@@ -284,5 +343,7 @@
             </form>                     
         </div>
     </footer>
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>       
 </body>
 </html>
