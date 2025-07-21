@@ -216,6 +216,11 @@ a{
     fill: #FFFFFF;
 }
 
+.social-item:hover,
+.social-item:focus{
+    background-color: #31D0AA;
+}
+
 @screen and (min-width:768){
     .mobile-menu{
         display: none
@@ -248,4 +253,61 @@ a{
     letter-spacing: 0.02em;
     color: #434455;
 } 
+
+/* team */
+
+.team{
+    background-color: #F4F4FD;
+}
+
+.team-title {
+font-weight: 700;
+font-size: 36px;
+line-height: 1,11;
+letter-spacing: 0.02em;
+text-align: center;
+color: #2E2F42;
+}
+
+.team-list {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+}
+
+.team-list-item {
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.team-list-name {
+font-weight: 500;
+font-size: 20px;
+line-height: 1,2;
+letter-spacing: 0.02em;
+text-align: center;
+color: #2E2F42;
+margin-bottom:8px;  
+}
+
+.team-list-job-title {
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0.02em;
+text-align: center;
+color: #434455;
+}
+
+.team-social {
+    display: flex;
+    gap: 24px;
+    margin:0;
+    padding:0;
+}
+
+/* portfolio */
+
+
+
 /* transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
