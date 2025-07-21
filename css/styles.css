@@ -293,7 +293,7 @@ margin-bottom:8px;
 .team-list-job-title {
 font-weight: 400;
 font-size: 16px;
-line-height: 150%;
+line-height: 1,5;
 letter-spacing: 0.02em;
 text-align: center;
 color: #434455;
@@ -302,11 +302,61 @@ color: #434455;
 .team-social {
     display: flex;
     gap: 24px;
-    margin:0;
-    padding:0;
+    margin: 0px 0px 32px 0px;
+    padding:0;  
 }
 
 /* portfolio */
+
+.portfolio{
+    background-color: #FFFFFF;
+}
+
+.portfolio-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1,11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2E2F42;
+}
+
+.portfolio-list{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.portfolio-item{
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    border-bottom: 1px solid var(--cornflower);
+    border-left: 1px solid var(--cornflower);
+    border-right: 1px solid var(--cornflower);
+
+}
+
+.portfolio-img{
+    /* margin-bottom: 32px; */
+}
+
+
+.portfolio-name{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1,2;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+    margin-bottom: 8px;
+}
+
+.portfolio-type{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #434455;
+
+}
 
 
 
