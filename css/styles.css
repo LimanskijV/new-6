@@ -242,6 +242,9 @@ a{
 
 /* benefits */
 
+.benefits{
+    padding: 96px 16px;
+}
 
 .benefits-list{
     display: flex;
@@ -259,7 +262,6 @@ a{
 }
 
 .benefits-list-text{
-    font-family: var(--font-family);
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
@@ -334,6 +336,7 @@ margin-bottom: 8px;
 
 .portfolio{
     background-color: #FFFFFF;
+    padding: 96px 16px;
 }
 
 .portfolio-title{
@@ -343,6 +346,7 @@ margin-bottom: 8px;
     letter-spacing: 0.02em;
     text-align: center;
     color: #2E2F42;
+    margin-bottom: 72px;
 }
 
 .portfolio-list{
@@ -388,9 +392,92 @@ margin-bottom: 8px;
     line-height: 150%;
     letter-spacing: 0.02em;
     color: #434455;
+}
+
+/* footer */
+
+.footer-all{
+    background: #2E2F42;
+    padding-top: 100px;
+    padding-left: 17px;
+}
+
+.web{
+    margin-bottom: 72px;
 
 }
 
+.footer-studio{
+    color: #F4F4FD; 
+}
+
+.footer-down{
+    margin-bottom: 16px;
+    text-align: center;
+    display: block;
+}
+
+.footer-text{
+    /* margin-top: 16px; */
+    text-align: left;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #F4F4FD;
+}
+
+.social-media{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.footer-form{
+    margin-top: 72px;
+}
+
+.form-submit{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 22px;
+    display: block;
+}
+
+.footer-email-input{
+    width: 288px;
+    height: 40px;
+    margin-bottom: 16px;
+}
+
+.footer-button{
+font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0.04em;
+text-align: center;
+color: #FFFFFF;
+display: block;
+margin: 0 auto;
+
+border-radius: 4px;
+padding: 8px 24px;
+width: 165px;
+height: 40px;
+
+background-color: #4D5AE5;
+}
 
 
+.footer-tg{
+    margin-left: 16px;
+}
 /* transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
