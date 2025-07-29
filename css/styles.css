@@ -494,6 +494,17 @@ margin-bottom: 8px;
     width: 100%;
     height: 100%;
     background-color: rgba(46, 47, 66, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 250ms  cubic-bezier(0.4, 0, 0.2, 1), 
+                visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-open{
+        opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
 }
 
 .modal {
@@ -503,7 +514,98 @@ margin-bottom: 8px;
 
     width: 288px;
     min-height: 623px;
+    transform: translate(-50%, -50%);
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
     background: #FCFCFC;
     border-radius: 4px;
+
+    transition: transform 250ms  cubic-bezier(0.4, 0, 0.2, 1);
+    padding-top: 72px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 24px;
+
 }
+
+.backdrop:not(.is-open) .modal{
+    transform: translate(-50%, -50%) scale(1.5);     
+}
+
+.modal-button-close{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    border-radius: 50%;
+    background-color: #CCCCCC;
+    stroke-width: 1px;
+    stroke: rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-button-close:hover,
+.modal-button-close:focus{
+    border:none;
+    background-color: #404BBF;
+}
+
+.modal-button-close:hover > svg,
+.modal-button-close:focus > svg {
+    fill: #FFFFFF;
+}
+
+.modal-title{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2E2F42;
+    margin-bottom: 16px;
+}
+
+.modal-label{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 117%;
+    letter-spacing: 0.04em;
+    color: #8E8F99;
+    margin-bottom: 4px;
+
+}
+
+.modal-input {
+    width: 100%;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    height: 40px;
+    padding-left: 40px;
+}
+
+.modal-input:focus {
+    border: 1px solid #4D5AE5;    
+}
+
+.modal-input:focus + svg{
+    fill: #4D5AE5;
+}
+
+.svg-color{
+    fill: #2E2F42;
+}
+
+.modal-input-container{
+    position: relative;
+}
+
+
+
+.svg-position{
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
