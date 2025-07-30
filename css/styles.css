@@ -583,6 +583,7 @@ margin-bottom: 8px;
     border-radius: 4px;
     height: 40px;
     padding-left: 40px;
+    outline: transparent;
 }
 
 .modal-input:focus {
