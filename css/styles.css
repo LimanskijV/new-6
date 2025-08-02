@@ -683,3 +683,38 @@ margin-bottom: 8px;
     margin: 0 auto;
     display: block;
 }
+
+.pro-flex{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    
+}
+
+.pro-button-passive,
+.pro-button-active{
+    background-color: red;
+    width: 200px;
+    height: 40px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.pro-button-passive{
+    background-color: orange;
+}
+
+.pro-button-passive:hover{
+    background-color: blue;
+}
+
+
+.pro-line{
+    background-color: blue;
+    width: 600px;
+    height: 20px;
+}
+
+.pro-body{
+    padding: 40px;
+}
