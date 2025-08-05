@@ -74,8 +74,14 @@ button{
 /*hero-banner*/
 
 .hero-banner {
-    background-color: #2E2F42;
+    background-image: 
+    linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url("../images/background1.jpg"); 
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center;/* background-color: #2E2F42; */
     height: 432px;
+    
 }
 
 .hero-title {
