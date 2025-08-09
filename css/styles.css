@@ -335,11 +335,71 @@ margin: 0 auto;
 .hero-banner {
     background-image: 
     linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url("../images/background1.jpg"); 
+    url("../images/background/BG-mob-min.jpg"); 
     background-size:cover;
     background-repeat:no-repeat;
-    background-position: center;/* background-color: #2E2F42; */
+    background-position: center;
     height: 432px;
+}
+
+@media (min-resolution: 2x){
+    .hero-banner {
+        background-image: 
+        linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url("../images/background/BG-mob@2x-min.jpg"); 
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-position: center;
+        height: 432px;
+        }
+}
+
+@media screen and (min-width:768px){
+    .hero-banner {
+        background-image: 
+        linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url("../images/background/BG-tab-min.jpg"); 
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-position: center;
+        height: 436px;
+        }
+}
+
+@media screen and (min-width:768px) and (min-resolution:2x){
+    .hero-banner {
+        background-image: 
+        linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url("../images/background/BG-tab@2x-min.jpg"); 
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-position: center;
+        height: 436px;
+        }
+}
+
+@media screen and (min-width:1158px){
+    .hero-banner {
+        background-image: 
+        linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url("../images/background/BG-desc-min.jpg"); 
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-position: center;
+        height: 600px;
+        }
+}
+
+@media screen and (min-width:1158px) and (min-resolution:2x){
+    .hero-banner {
+        background-image: 
+        linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url("../images/background/BG-desc@2x-min.jpg"); 
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-position: center;
+        height: 600px;
+        }
 }
 
 .hero-title {
@@ -420,7 +480,10 @@ margin: 0 auto;
 }
 
 .benefits{
-    padding: 96px 16px;
+    padding-left: 16px;
+    padding-right:16px;
+    padding-top: 96px;
+    padding-bottom:96px;
 }
 
 .benefits-list{
@@ -446,6 +509,7 @@ margin: 0 auto;
 @media screen and (min-width:1158px){
     .benefits-list-item{
         width: calc((100% - 72px) / 4);
+        height:100%;
     }
 
 }
@@ -716,7 +780,7 @@ margin-bottom: 8px;
 
 @media screen and (min-width: 1158px){
     .footer-all{
-        padding: 100px 156px;
+        padding: 100px 17px;
     }
 }
 
@@ -726,11 +790,19 @@ margin-bottom: 8px;
 
 @media screen and (min-width:768px){
     .web{
-        width: 264px;
-        height: 112px;
-
+        max-width: 264px;
+        max-height: 112px;
     }
 }
+
+@media screen and (min-width:1158px){
+    .web{
+        /* margin-left: 40px; */
+    }
+
+}
+
+
 
 .footer-studio{
     color: #F4F4FD; 
@@ -740,7 +812,7 @@ margin-bottom: 8px;
     text-align: left;
     font-weight: 400;
     font-size: 16px;
-    line-height: 150%;
+    line-height: 1,5;
     letter-spacing: 0.02em;
     color: #F4F4FD;
 }
@@ -784,6 +856,12 @@ margin-bottom: 8px;
     margin-bottom: 16px;
 }
 
+@media screen and (min-width:1158px){
+    .footer-email-input{
+        width: 264px;
+    } 
+}
+
 .footer-button{
     font-weight: 500;
     font-size: 16px;
@@ -819,7 +897,7 @@ margin-bottom: 8px;
     }
 }
 
-.footer-flex{
+.footer-type{
         display: flex;
         flex-direction: column;
         gap: 72px;
@@ -827,10 +905,18 @@ margin-bottom: 8px;
 }
 
 @media screen and (min-width:768px){
-    .footer-flex{   
+    .footer-type{   
         flex-direction: row;
         gap: 72px 24px;
         flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width:1158px)
+{
+    .footer-type{
+        flex-wrap: nowrap;
+        gap: 80px;
     }
 }
 
@@ -840,4 +926,10 @@ margin-bottom: 8px;
         gap: 24px;
         justify-items:end;
     }
+}
+
+.footer-social-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center; 
 }
