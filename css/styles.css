@@ -591,6 +591,12 @@ margin-bottom: 8px;
     padding: 96px 16px;
 }
 
+@media screen and (min-width: 1158px){
+    .portfolio{
+        padding-top: 120px;
+    }
+}
+
 .portfolio-title{
     font-weight: 700;
     font-size: 36px;
@@ -605,6 +611,22 @@ margin-bottom: 8px;
     display: flex;
     flex-direction: column;
     gap: 48px;
+}
+
+@media screen and (min-width: 768px){
+    .portfolio-list{
+        flex-direction: row;
+        gap: 72px 24px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 1158px){
+    .portfolio-list{
+        gap: 48px 24px;
+        width: 100%;
+    }
 }
 
 .portfolio-item{
@@ -671,7 +693,93 @@ margin-bottom: 8px;
 .portfolio-type{
     font-weight: 400;
     font-size: 16px;
-    line-height: 150%;
+    line-height: 1,5;
     letter-spacing: 0.02em;
     color: #434455;
+}
+
+/* footer */
+
+.footer-all{
+    background: #2E2F42;
+    padding-top: 100px;
+    padding-left: 17px;
+    padding-bottom: 100px;
+}
+
+.web{
+    margin-bottom: 72px;
+
+}
+
+.footer-studio{
+    color: #F4F4FD; 
+}
+
+.footer-down{
+    margin-bottom: 16px;
+    text-align: center;
+    display: block;
+}
+
+.footer-text{
+    /* margin-top: 16px; */
+    text-align: left;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #F4F4FD;
+}
+
+.social-media{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.footer-form{
+    margin-top: 72px;
+}
+
+.form-submit{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 22px;
+    display: block;
+}
+
+.footer-email-input{
+    width: 288px;
+    height: 40px;
+    margin-bottom: 16px;
+}
+
+.footer-button{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    /* text-align: center; */
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:16px;
+    margin: 0 auto;
+
+    border-radius: 4px;
+    padding: 8px 24px;
+    width: 165px;
+    height: 40px;
+
+    background-color: #4D5AE5;
 }
